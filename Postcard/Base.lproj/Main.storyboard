@@ -52,7 +52,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="26" y="92" width="340" height="67"/>
+                                    <rect key="frame" x="26" y="120" width="340" height="54"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="anotherLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIH-nT-g4R">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="72" width="340" height="40"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4It-4G-cIT">
@@ -60,7 +69,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="26" y="325" width="340" height="30"/>
+                                    <rect key="frame" x="30" y="305" width="340" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="go7-Bh-cee">
@@ -68,13 +77,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="26" y="380" width="340" height="30"/>
+                                    <rect key="frame" x="30" y="360" width="340" height="30"/>
                                 </variation>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="url.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PSN-io-EE2">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="230" y="202" width="136" height="96"/>
+                                    <rect key="frame" x="234" y="182" width="136" height="96"/>
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eta-JY-yYM">
@@ -85,7 +94,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="26" y="268" width="196" height="30"/>
+                                    <rect key="frame" x="30" y="248" width="196" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPressed:" destination="ggf-NX-gIY" eventType="touchUpInside" id="hN3-6e-g3W"/>
@@ -96,6 +105,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="WZP-iW-LrQ"/>
+                                <exclude reference="eIH-nT-g4R"/>
                                 <exclude reference="4It-4G-cIT"/>
                                 <exclude reference="go7-Bh-cee"/>
                                 <exclude reference="PSN-io-EE2"/>
@@ -105,6 +115,7 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="WZP-iW-LrQ"/>
+                                <include reference="eIH-nT-g4R"/>
                                 <include reference="4It-4G-cIT"/>
                                 <include reference="go7-Bh-cee"/>
                                 <include reference="PSN-io-EE2"/>
@@ -113,6 +124,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="anotherLabel" destination="eIH-nT-g4R" id="sxL-Zx-cPa"/>
                         <outlet property="enterMessageTextBox" destination="go7-Bh-cee" id="dlW-ju-UAl"/>
                         <outlet property="enterNameTextBox" destination="4It-4G-cIT" id="P8c-Sc-gg5"/>
                         <outlet property="mailButton" destination="Eta-JY-yYM" id="pQ4-y2-E03"/>
